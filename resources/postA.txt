@@ -1,0 +1,12 @@
+****************************************
+****** You have choosen text post ******
+
+Please write the body of your post (not the title) in the "Text_Post" file.
+
+This is because it's not possible to write long text here. 
+
+If you have any doubts read the 'INSTRUCTIONS' file. 
+
+Once you have finished writing your post, save and close the "Text_Post" file and enter "Y"
+
+******************************************

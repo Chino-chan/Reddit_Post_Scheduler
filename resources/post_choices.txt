@@ -1,0 +1,8 @@
+Do you want to....
+
+A) Post text 
+B) Post an image
+C) Post a link (news/video)
+
+Enter A, B or C
+

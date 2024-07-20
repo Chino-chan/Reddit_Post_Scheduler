@@ -1,0 +1,7 @@
+***************************************
+*** You're about to set up new keys***
+
+If you don't know what these keys are: 
+Please read the "IMPORTANT_INSTRUCTIONS.txt" file in the folder
+
+***************************************

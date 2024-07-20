@@ -1,0 +1,7 @@
+*******************************************
+***** Welcome to Reddit Post Scheduler ****
+
+Set up automatic Reddit posts ahead of time.
+
+*******************************************
+
