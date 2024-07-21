@@ -6,9 +6,12 @@ import functionality
 import scheduler
 
 
+
+#When program is run, first the welcome message will be displayed, then
+#the program will look for existent reddit keys, if it finds some, then
+#it will ask the user if it wants to generate new ones or use the ones found.
 functionality.read_message('welcome')
 
-#If no credentials are stored, then they will be set up
 if functionality.check_existing_keys() == True:
     functionality.existent_keys_present()
 else:
@@ -17,38 +20,44 @@ else:
 
 
 #Once credentials are set up, the reddit post set-up begins
-reddit_instance = scheduler.make_instance()
-print("Now that we have keys, we can set up the actual post")
-print("What subreddit would you like to schedule a post for?. Don't include 'r/'")
-print("For example, if you want 'r/cats' then simply enter 'cats' (without quotemarks)")
-choosen_subreddit = input("Answer:")
-while(True):
-    user_input = input(f"The choosen subreddit is: {choosen_subreddit}, is that correct? Y/N")
-    if(user_input.casefold() == "y" ):
-        break;
-    choosen_subreddit = input("Let's try again, what subreddit would you like to schedule a post for?")
+#First we make an instance of Reddit, then we ask the user for the subreddit they want
+#Finally, we make an instance of the subreddit the user has choosen
+#reddit_instance = scheduler.make_instance()
+choosen_subreddit = scheduler.choose_subreddit()
+#subreddit_instance = reddit_instance.subreddit(choosen_subreddit)
 
-#Geting sub instance
-subreddit_instance = reddit_instance.subreddit(choosen_subreddit)
+# Deciding the post title
+post_choosen_title = scheduler.choose_post_title()
 
-## Deciding the post title
-print("Enter the title of the reddit post to make:")
-choosen_title = input("Answer:")
-
-## Deciding the type of post, text/link or image
+# Deciding the type of post, text/link or image
+print("\n***********************************")
+print("\nOkay, now that we have the subreddit & title, what kind of post do you want to make?\n")
 functionality.read_message("post_choices")
-user_post_choice = input("")
+
+valid_choices = ('a','b','c')
 while(True):
-    if (user_post_choice.casefold == "A"):
-        scheduler.text_post()
-    elif (user_post_choice.casefold == "B"):
-        scheduler.image_post()
-    elif (user_post_choice.casefold == "C"):
-        scheduler.link_post()
+    user_post_choice = input("Answer:")
+    if (user_post_choice.casefold() in valid_choices):
+        break
     else:
+        print("Wrong input, please try again\n")
         print("Wrong letter, try again")
 
-
-
-#Doing something to sub
-#subreddit_instance.submit(title="test", url= "https://www.youtube.com/watch?v=FL-NhmFGQYw")
+# Setting up the post content according to choice
+# Case A sets the text post, doesn't need to return anything
+# Case B sets the image post, needs to return the name of the image
+# Case C sets the link post, needs to return the link
+if (user_post_choice.casefold() == "a"):
+    scheduler.set_text_post(title = post_choosen_title)   
+elif (user_post_choice.casefold() == "b"):
+    image_name = scheduler.set_image_post()    
+elif (user_post_choice.casefold() == "c"):
+    user_link = scheduler.set_link_post()
+    
+# Finally creating the Python file that will make the post using the keys & WRAP library
+if user_post_choice.casefold() == "a":
+    scheduler.create_post_file(type_post = user_post_choice, title = post_choosen_title, subreddit = choosen_subreddit )
+if user_post_choice.casefold() == "b":
+    scheduler.create_post_file( type_post = user_post_choice, title = post_choosen_title, subreddit = choosen_subreddit, image = image_name)
+if user_post_choice.casefold() == "c":
+    scheduler.create_post_file(type_post = user_post_choice, title = post_choosen_title, subreddit = choosen_subreddit, link= user_link )

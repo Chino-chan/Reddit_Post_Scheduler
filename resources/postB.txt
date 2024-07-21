@@ -1,0 +1,10 @@
+****************************************
+****** You have choosen Image post ******
+
+Please place the image you want to upload in the 'reddit_images' folder
+
+Once you have placed the image please write the complete name, including the format.
+
+For example: "Cat.png" / "Dog.jpg"
+
+******************************************

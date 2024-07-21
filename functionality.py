@@ -57,7 +57,7 @@ def existent_keys_present():
     user_input = input("Answer:")
     while(user_input.casefold() != "q"):
         if (user_input.casefold() == "y"):
-            print("Okay, let's use these")
+            print("\nOkay, let's use these")
             break;
         
         elif (user_input.casefold() == "n"):
