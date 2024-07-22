@@ -1,6 +1,8 @@
 # Reddit Post Scheduler ⏰
 A command line tool made to set up and schedule Reddit Posts 
 
+This tool is made for those that don't want to give their account to online services
+
 How to use this tool
 --------------------
 
@@ -21,12 +23,14 @@ During installation, make sure to check the box that says "Add Python to PATH"
 
 2. **Install PRAW Library**: 
 
-This tool uses PRAW to interact with Reddit. After installing Python, open the "Windows Command Prompt"
+This tool uses PRAW to interact with Reddit.<br>
+After installing Python, open the "Windows Command Prompt"<br>
+
 Then run the following  command to install using pip:
 
- bash
+```bash
    pip install praw
-
+```
 
 
 Getting your Reddit Keys
@@ -36,16 +40,17 @@ Getting your Reddit Keys
 - Go to the [Reddit Apps page](https://www.reddit.com/prefs/apps).
 - Click on the "Create App" or "Create Another App" button.
 
-<img src="https://i.imgur.com/K9JvUv2.jpeg"> 
-
 
 - Fill out the required fields:
      - **Name**: Choose a name for your app (e.g., "MyRedditTool").
-     - **App type**: Select "script" if you're using this tool for personal use.
-     - **Description**: Provide a brief description of your app (optional).
+     - **App type**: Select "script".
+     - **Description**: You can leave this blank.
      - **About url**: You can leave this blank.
      - **Redirect uri**: Enter `http://localhost:8080` (this can be any valid URL).
    - Click "Create app" to generate your API keys.
 
 <img src="https://i.imgur.com/QuFBy0W.jpeg">
 
+
+Knowing your Reddit Keys
+------------------------
