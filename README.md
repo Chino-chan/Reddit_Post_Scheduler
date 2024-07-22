@@ -27,7 +27,11 @@ Then run the following  command to install using pip:
    ```bash
    pip install praw
 
-## Getting your Reddit Keys
+
+
+Getting your Reddit Keys
+------------------------
+
 
 - Go to the [Reddit Apps page](https://www.reddit.com/prefs/apps).
 - Click on the "Create App" or "Create Another App" button.
