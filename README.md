@@ -14,9 +14,17 @@ How to use this tool
 
 ## Prerequisites
 
-1. **Install Python**: Make sure Python is installed on your computer. You can download it from [python.org](https://www.python.org/downloads/).
+1. **Install Python**:
 
-2. **Install PRAW Library**: This tool uses the PRAW library to interact with Reddit. Install it using pip:
+Make sure Python is installed on your computer. You can download it from [python.org](https://www.python.org/downloads/).
+During installation, make sure to check the box that says "Add Python to PATH"
+
+4. **Install PRAW Library**: 
+
+This tool uses PRAW to interact with Reddit.  
+After installing Python, you have to open the "Windows Command Prompt" (Windows search -> Command Prompt)
+
+Then run the following  command to install using pip:
 
    ```bash
    pip install praw
