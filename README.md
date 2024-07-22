@@ -26,3 +26,5 @@ Then run the following  command to install using pip:
 
    ```bash
    pip install praw
+
+## Prerequisites
