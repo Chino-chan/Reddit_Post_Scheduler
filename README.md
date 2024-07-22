@@ -16,7 +16,7 @@ How to use this tool
 
 1. **Install Python**:
 
-Make sure Python is installed on your computer. You can download it from [python.org](https://www.python.org/downloads/).\n
+Make sure Python is installed on your computer. You can download it from [python.org](https://www.python.org/downloads/).<br>
 During installation, make sure to check the box that says "Add Python to PATH"
 
 2. **Install PRAW Library**: 
