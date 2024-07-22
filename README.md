@@ -24,7 +24,7 @@ During installation, make sure to check the box that says "Add Python to PATH"
 This tool uses PRAW to interact with Reddit. After installing Python, open the "Windows Command Prompt"
 Then run the following  command to install using pip:
 
-   ```bash
+ bash
    pip install praw
 
 
