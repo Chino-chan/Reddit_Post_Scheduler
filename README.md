@@ -1,4 +1,4 @@
-# Reddit Post Scheduler ⏰
+# Reddit Post Scheduler ⏰📆
 A command line tool made to set up and schedule Reddit Posts 
 
 This tool is made for those that don't want to give their account to online services
@@ -9,7 +9,7 @@ How to use this tool
 1) Install Python in your computer
 2) Install PRAW library 
 1) Get "keys" for the Reddit account you want to make a post from
-2) Get to know your "keys" 
+2) Knowing your keys
 3) See the type of posts you can make
 
 
@@ -49,8 +49,22 @@ Getting your Reddit Keys
      - **Redirect uri**: Enter `http://localhost:8080` (this can be any valid URL).
    - Click "Create app" to generate your API keys.
 
-<img src="https://i.imgur.com/QuFBy0W.jpeg">
+<img src="https://i.imgur.com/6Ap6u6g.jpeg">
 
 
 Knowing your Reddit Keys
 ------------------------
+
+<img src="https://i.imgur.com/QgoDsNW.jpeg">
+
+
+When you first run this program, it will ask you for your Reddit keys & Account info.<br>
+The program will use this to interact with Reddit & automatically post.
+
+- You will be asked for:
+     - **Client ID**: It's the long code line under "personal use script".
+     - **Client Secret**: It's the long code line next to "Secret".
+     - **User Agent**: You can whatever in here (e.g., "MyRandomAgent44")
+     - **Username**: The name of the Reddit Account that you want to make a post from.
+     - **Password**: The password of the Reddit Account that you want to make a post from..
+   - Both Username & Password have to be from the same account that you made the keys for.
