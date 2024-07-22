@@ -1,0 +1,168 @@
+@Reddit-Post-Scheduler
+
+
+How to use this tool:
+---------------------
+
+1) Get "keys" for the Reddit account you want to make a post from
+2) Know what "keys" mean 
+3) See the type of posts you can make
+4) How to cancel an scheduled post
+
+IMPORTANT:
+----------
+
+- Once you set up an scheduled post you can not move the folder to another directory.
+This is because how it is programmed to be executed by the Windows Task Scheduler. 
+if you move the folder it will not find the files. (explanation at the end)
+
+- This will only work if, and only if, your computer is active at the moment you have
+decided to schedule the post. This is because it has to be executed by the Task Scheduler
+if your computer is turned off/sleeping then the Windows Task scheduler will not do its work
+
+
+
+
+
+
+
+
+###############################################
+
+#### Get the keys for your Reddit account #####
+
+###############################################
+
+You do this by going to 
+
+https://www.reddit.com/prefs/app
+
+2) Select "Create an app"
+
+3) Complete with
+
+- Name (Whatever you want)
+- select SCRIPT (not webApp, not Installed app)
+- redirect uri, complete with:  "http://localhost:8080"
+
+4) Then click on "Create app"
+
+Your keys are created!
+
+
+
+
+
+
+###############################################
+
+############# Know your your keys ############
+
+###############################################
+
+
+- "Client ID"
+In the Reddit apps panel, this is a long code under "personal use script"
+
+- "Client secret"
+This is a long code next to "secret"
+
+- "User Agent"
+This can be whatever you want, write some short name.
+
+- "Username"
+This has to be the username from the Reddit account you want to make a post from.
+It has to be the same account you made the keys for.
+
+- "Password"
+The password for the account you want to make a post from.
+
+With this information, the program can interact with Reddit and make the post
+
+
+
+
+###############################################
+
+####### The kind of posts you can make ########
+
+###############################################
+
+You can either make a 
+
+------
+
+1) Text post
+
+Meaning, a post with a title and content body of only text
+You have to write the body of the post (not the title) in the "Text_Post" file
+Once you do this the program will make a copy and save it in "user_text" 
+
+This is because you may want to schedule 2 text posts, you can safely erase the content
+of the "Text_Post" file after you have scheduled a post.
+
+Don't delete the "Text_Post" file or the file in "user_text" folder
+
+------
+
+2) Image post
+
+
+You need to place the image you want to upload in the "reddit_images" folder
+It is recommended for the image name to be simple, like "cat.jpg"
+It is extremely important that you use the image extension, not only the name.
+
+If the image is named "cat" then see if it's "cat.jpg" or "cat.png" 
+You need to write it fully Ex: "cat.jpg" for the program to recognize it.
+
+Once you set up the scheduled post, don't remove the image from "reddit_images"
+
+
+------
+
+3) Link Posts
+
+This kind of posts are the ones you do when you want to submit a Youtube video
+a news article or etc. It has to be full complete link, such as 
+
+https://youtu.be/KGgtcz8u4rY?si=ICc3It7-PnQLx5WL
+
+Don't submit it with quotemarks
+
+------
+
+
+
+
+
+
+
+
+
+###############################################
+
+####### How to cancel an scheduled post ######
+
+###############################################
+
+
+You can do this by either...
+
+1) Deleting the file that will be created after you schedule a task
+this file will have the same name as the title of the post you wanted to make.
+
+
+2) Deleting the scheduled task by opening the "Task Scheduler" in Windows
+
+
+3) Do both 1&2
+
+
+
+
+
+
+
+
+
+
