@@ -67,4 +67,5 @@ The program will use this to interact with Reddit & automatically post.
      - **User Agent**: You can whatever in here (e.g., "MyRandomAgent44")
      - **Username**: The name of the Reddit Account that you want to make a post from.
      - **Password**: The password of the Reddit Account that you want to make a post from..
-   - Both Username & Password have to be from the same account that you made the keys for.
+
+Both Username & Password have to be from the same account that you made the keys for.
