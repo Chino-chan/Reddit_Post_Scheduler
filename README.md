@@ -20,7 +20,7 @@ Make sure Python is installed on your computer. You can download it from [python
 
 During installation, make sure to check the box that says "Add Python to PATH"
 
-4. **Install PRAW Library**: 
+2. **Install PRAW Library**: 
 
 This tool uses PRAW to interact with Reddit.  
 After installing Python, you have to open the "Windows Command Prompt" (Windows search -> Command Prompt)
