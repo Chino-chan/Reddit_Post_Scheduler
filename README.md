@@ -6,11 +6,11 @@ This tool is made for those that don't want to give their account to online serv
 How to use this tool
 --------------------
 
-1) Install Python in your computer
-2) Install PRAW library 
-1) Get "keys" for the Reddit account you want to make a post from
-2) Knowing your keys
-3) See the type of posts you can make
+1) Install Python in your computer.
+2) Install PRAW. 
+1) Get "keys" for the Reddit account you want to make a post from.
+2) Know what each key means.
+3) See the type of posts you can make.
 
 
 
