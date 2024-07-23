@@ -102,3 +102,14 @@ def add_new_keys():
     if (user_input.casefold() == "n"):
         print("\n Okay, let's try again...")
         add_new_keys()
+
+
+def replace_spaces_with_underscores(input_string):
+    """
+    I HATE POWERSHELL
+    I HATE THE WINDOWS TASK SCHEDULER
+    LITERALLY DEMONS ON EARTH
+    AFTER SETTING THEM UP I CAN DO ANYTHING
+    """
+    modified_string = input_string.replace(' ', '_')
+    return modified_string

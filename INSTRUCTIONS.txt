@@ -9,16 +9,17 @@ How to use this tool:
 3) See the type of posts you can make
 4) How to cancel an scheduled post
 
+
 IMPORTANT:
 ----------
 
 - Once you set up an scheduled post you can not move the folder to another directory.
 This is because how it is programmed to be executed by the Windows Task Scheduler. 
-if you move the folder it will not find the files. (explanation at the end)
+if you move the folder it will not find the files. 
 
-- This will only work if, and only if, your computer is active at the moment you have
-decided to schedule the post. This is because it has to be executed by the Task Scheduler
-if your computer is turned off/sleeping then the Windows Task scheduler will not do its work
+- This will only work if, and only if, your computer is turned on at the moment you have
+decided to schedule the post. This is because it has to be executed by Windows the Task Scheduler.
+if your computer is turned off/sleeping then the Windows Task scheduler will not do its work.
 
 
 
@@ -148,8 +149,8 @@ Don't submit it with quotemarks
 
 You can do this by either...
 
-1) Deleting the file that will be created after you schedule a task
-this file will have the same name as the title of the post you wanted to make.
+1) Deleting the two files that will be created after you schedule a task
+The two files will have the same name as the title of the post you wanted to make.
 
 
 2) Deleting the scheduled task by opening the "Task Scheduler" in Windows

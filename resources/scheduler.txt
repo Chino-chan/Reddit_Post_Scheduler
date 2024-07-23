@@ -1,0 +1,15 @@
+***************************************
+************ We're almost done *********
+
+Now that we have set up the post preparations,
+We need to set up the time that you want to post it.
+
+This will be done by setting up a task in "Windows Task Scheduler"
+
+Example:
+Day: 05
+Month: 12
+Year: 2040
+Time: 18:20
+
+***************************************
