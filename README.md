@@ -69,3 +69,76 @@ The program will use this to interact with Reddit & automatically post.
      - **Password**: The password of the Reddit Account that you want to make a post from..
 
 Both Username & Password have to be from the same account that you made the keys for.
+
+
+
+The type of posts you can make
+------------------------
+
+
+- Text post 📃
+
+Meaning, a post with a title and content body of only text<br>
+You have to write the body of the post (not the title) in the "Text_Post" file<br>
+Once you do this the program will make a copy and save it in "user_text"<br>
+
+This is because you may want to schedule 2 text posts, you can safely erase the content<br>
+of the "Text_Post" file after you have scheduled a post.<br>
+
+Don't delete the "Text_Post" file or the file in "user_text" folder
+
+------
+
+- Image post 📷
+
+
+You need to place the image you want to upload in the "reddit_images" folder<br>
+It is recommended for the image name to be simple, like "cat.jpg"<br>
+It is extremely important that you use the image extension, not only the name.<br>
+
+If the image is named "cat" then see if it's "cat.jpg" or "cat.png"<br>
+You need to write it fully Ex: "cat.jpg" for the program to recognize it.
+
+Once you set up the scheduled post, don't remove the image from "reddit_images"
+
+
+------
+
+- Link Posts 🧲
+
+This kind of posts are the ones you do when you want to submit a Youtube video<br>
+a news article or etc. It has to be full complete link, such as<br> 
+
+https://youtu.be/KGgtcz8u4rY?si=ICc3It7-PnQLx5WL
+
+Don't submit it with quotemarks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
