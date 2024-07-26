@@ -10,7 +10,7 @@ How to use this tool
 2) Install PRAW. 
 1) Get "keys" for the Reddit account you want to make a post from.
 2) Know what each key means.
-3) See the type of posts you can make.
+3) Run the program & see type of posts you can make.
 4) How to cancel scheduled post
 
 
