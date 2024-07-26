@@ -19,10 +19,23 @@ def read_keys():
 
 
 def modify_keys(newkeys):
-    """Directly write the keys in json"""
+    """Write the keys in reddit_keysjson"""
     
     file = pathlib.Path("reddit_keys.json")
     contents = json.dumps(newkeys)
+    file.write_text(contents)
+
+    
+def keyswitcher():
+    """sets if there are existent keys or not"""
+    
+    file = pathlib.Path("keyconfig.json")
+    contents = file.read_text()
+    keystate = json.loads(contents)
+    
+    keystate["Existent_keys"] = 1;
+    
+    contents = json.dumps(keystate)
     file.write_text(contents)
 
 
@@ -102,14 +115,16 @@ def add_new_keys():
     if (user_input.casefold() == "n"):
         print("\n Okay, let's try again...")
         add_new_keys()
+    
+    keyswitcher()
+    
 
 
 def replace_spaces_with_underscores(input_string):
     """
     I HATE POWERSHELL
     I HATE THE WINDOWS TASK SCHEDULER
-    LITERALLY DEMONS ON EARTH
-    AFTER SETTING THEM UP I CAN DO ANYTHING
+    LITERALLY THE ANTICHRIST OF SOFTWARE
     """
     modified_string = input_string.replace(' ', '_')
     return modified_string

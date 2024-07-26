@@ -9,7 +9,7 @@ from datetime import datetime
 
 
 #When program is run, first the welcome message will be displayed, then
-#the program will look for existent reddit keys, if it finds some, then
+#the program will look for existent reddit keys, if it finds them, then
 #it will ask the user if it wants to generate new ones or use the ones found.
 functionality.read_message('welcome')
 
@@ -20,12 +20,13 @@ else:
     functionality.add_new_keys()
 
 
-#Once credentials are set up, the actual reddit post set-up begins
+#Once credentials are set up, the actual Reddit post set-up begins
 #First we ask the user for the subreddit they want to schedule a post for
 #Then we ask for the title of that post
 choosen_subreddit = scheduler.choose_subreddit()
 post_choosen_title = scheduler.choose_post_title()
 no_whitespaces_file_title = functionality.replace_spaces_with_underscores(post_choosen_title)
+
 
 # Now we let the user decide what kind of post they want
 # If they want to post a text based post, a picture or a link (= news/video)
@@ -53,6 +54,7 @@ elif (user_post_choice.casefold() == "b"):
 elif (user_post_choice.casefold() == "c"):
     user_link = scheduler.set_link_post()
     
+    
 # When all details for the type of post are gathered in the previou step
 # Now creation of the Python file that will make the post using the keys & WRAP library is done
 if user_post_choice.casefold() == "a":
@@ -66,7 +68,7 @@ if user_post_choice.casefold() == "c":
     
 # Now that the Python file that will create the post is done,
 # The Windows Task Scheduler needs to be set up so it can eventually execute it.
-# We now ask the user when does it want to make the post and so on.
+# We ask the user for scheduling info
 print("\n")
 functionality.read_message("scheduler")
 
@@ -89,23 +91,13 @@ except ValueError as e:
 #
 # File path builder. 
 # Necessary to retrieve the full location of the Python file
-# current directory of the running Python script:
+# Current directory of the running Python script
 script_dir = os.path.dirname(os.path.abspath(__file__))
 python_post_file = os.path.join(script_dir, f'{no_whitespaces_file_title}.py')
 bat_post_file = os.path.join(script_dir, f'{no_whitespaces_file_title}.bat')
 
 # Create the batch file that will execute the Python file
 scheduler.create_batch_file(no_whitespaces_file_title)
-
-#print("*******")
-#print(python_post_file)
-#escaped_script_path = python_post_file.replace("\\", "\\\\")
-#print("*******")
-#print(escaped_script_path)
-#cript_path = rf"{python_post_file}"
-#print("*******")
-#print(cript_path)
-
 
 
 
@@ -121,10 +113,9 @@ subprocess.run(["powershell", "-Command", powershell_command])
 
 
 
+# -------- Trash --------
+
 #powershell_command = f'schtasks /Create /TN "RunSecondFileTask" /SC ONCE /ST {specific_date_time_str} /SD {specific_date_time_str} /TR "{bat_post_file}"'
-
-
-
 
 #powershell_command = f"""
 #$action = New-ScheduledTaskAction -Execute "{bat_post_file}"

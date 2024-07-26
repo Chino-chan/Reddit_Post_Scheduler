@@ -4,4 +4,5 @@
 Set up automatic Reddit posts ahead of time.
 
 *******************************************
+- Remember to run this program with Admin privileges
 
