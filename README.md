@@ -1,7 +1,8 @@
 # Reddit Post Scheduler ⏰📆
-A command line tool made to set up and schedule Reddit Posts 
+A Windows command line tool made to set up and schedule Reddit Posts 
 
 This tool is made for those that don't want to give their account to online services
+
 
 How to use this tool
 --------------------
@@ -9,8 +10,19 @@ How to use this tool
 1) Install Python & PRAW in your computer.
 2) Get "keys" for the Reddit account you want to make a post from.
 3) Know what each key means.
-4) Run the program & see type of posts you can make.
-5) How to cancel scheduled post
+4) Run the program (With Admin Privileges)
+
+
+IMPORTANT 😡
+----------
+
+- Once you download the folder place it where you won't move it, because when you schedule a post you can not move the folder to another directory.
+This is because how it is programmed to be executed by the Windows Task Scheduler. 
+if you move the folder, then the WTS will not find the files. You can move it again afterwards. 
+
+- This will only work if, and only if, your computer is turned on at the moment you have
+decided to schedule the post. This is because it has to be executed by Windows the Task Scheduler.
+if your computer is turned off/sleeping then the WTS won't do it.
 
 
 
@@ -72,7 +84,30 @@ Both Username & Password have to be from the same account that you made the keys
 
 
 
-The type of posts you can make
+Running the Program
+------------------------
+
+<img src="https://i.imgur.com/LE8gequ.jpeg">
+
+
+You must run this program from the command line<br>
+This program needs admin privileges to run because it interacts with Windows Task Scheduler<br>
+
+- You do this by going to the program folder & opening the command line:
+   - Clicking on "File"
+   - "Open Windows Powershell"
+   - "Open Windows Powershell as Admin"
+
+Finally, running the program with the command
+
+```bash
+   python main.py
+```
+
+Then follow the steps in-program. 
+
+
+Type of posts you can make
 ------------------------
 
 
