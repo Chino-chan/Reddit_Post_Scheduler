@@ -16,6 +16,8 @@ How to use this tool
 IMPORTANT 😡
 ----------
 
+- Run the Command Line with Admin Privileges else it will never get scheduled in the Windows Task Scheduler
+
 - Once you download the folder place it where you won't move it, because when you schedule a post you can not move the folder to another directory.
 This is because how it is programmed to be executed by the Windows Task Scheduler. 
 if you move the folder, then the WTS will not find the files. You can move it again afterwards. 
