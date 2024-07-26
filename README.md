@@ -11,6 +11,7 @@ How to use this tool
 1) Get "keys" for the Reddit account you want to make a post from.
 2) Know what each key means.
 3) See the type of posts you can make.
+4) How to cancel scheduled post
 
 
 
@@ -114,9 +115,18 @@ https://youtu.be/KGgtcz8u4rY?si=ICc3It7-PnQLx5WL
 Don't submit it with quotemarks
 
 
+How to cancel scheduled posts
+------------------------
 
+You can do this by either...
 
+- Deleting the two files (python & .bat) that will be created after you schedule a task
+The two files will have the same name as the title of the post you wanted to make.
 
+- Deleting the scheduled task by opening the "Task Scheduler" in Windows
+  The will be named after the title of the post
+
+- Doing both 1&2
 
 
 
