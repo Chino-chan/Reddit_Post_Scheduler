@@ -93,7 +93,7 @@ Running the Program
 You must run this program from the command line<br>
 This program needs admin privileges to run because it interacts with Windows Task Scheduler<br>
 
-- You do this by going to the program folder & opening the command line:
+- You do this by going to the program folder & opening the admin command line:
    - Clicking on "File"
    - "Open Windows Powershell"
    - "Open Windows Powershell as Admin"
