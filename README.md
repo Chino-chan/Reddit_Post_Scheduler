@@ -6,12 +6,11 @@ This tool is made for those that don't want to give their account to online serv
 How to use this tool
 --------------------
 
-1) Install Python in your computer.
-2) Install PRAW. 
-1) Get "keys" for the Reddit account you want to make a post from.
-2) Know what each key means.
-3) Run the program & see type of posts you can make.
-4) How to cancel scheduled post
+1) Install Python & PRAW in your computer.
+2) Get "keys" for the Reddit account you want to make a post from.
+3) Know what each key means.
+4) Run the program & see type of posts you can make.
+5) How to cancel scheduled post
 
 
 
